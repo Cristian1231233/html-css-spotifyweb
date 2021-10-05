@@ -49,6 +49,9 @@ body{
 .sidebar .nav2 li{
     font-size: 15px;
 }
+.nav2 li a:hover, .nav1 li a:hover{
+    color: white;
+}
 .nav2 .titolino{
     color: white;
 }
@@ -82,16 +85,18 @@ header a{
     color: white;
     text-decoration: none;
     padding: 7px 20px;
-    margin-right: 4px;
+    margin-right: 8px;
     border-radius: 20px;
     border: 1px solid white;
+}
+header a:hover{
+    transform: scale(1.1);
 }
 .container main{
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: blueviolet;
+    background-color: #141922;
     padding: 0 10px 80px 10px;
-    
     overflow: auto;
 }
 
@@ -104,8 +109,11 @@ main ul li{
     margin-top: 15px;
     margin-right: 10px;
 }
-main ul li a{
+main ul li a:hover{
     color: white;
+}
+main ul li a{
+    color: gray;
     text-decoration: none;
 }
 main h1{
@@ -123,18 +131,18 @@ main h1{
     flex-wrap: wrap;
 }
 .image1{
-    width: 170px;
+    width: 15%;
     margin-right: 15px;
     margin-left: 3px;
     margin-top: 30px;
 }
 .image1 .image-top{
     width: 100%;
-    height: 170px;
+    height: 160px;
     background-color: red;
 }
 .image1 .image-bottom{
-    background-color: #ff6347;
+    background-color: ;
     text-align: center;
 }
 img{
@@ -155,10 +163,76 @@ img{
     font-size: 13px;
     padding-top: 8px;
 }
+.background1{
+    background-image: url("../img/youg.jpeg");
+}
+.background1, .background2{
+    border-radius: 50%;
+    background-position: center;
+    background-size: 130px;
+}
+.background2{
+    background-image: url("../img/einaudi.jpeg");
+}
 footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 70px;
     background-color: #282828;
+}
+.footer-left{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+}
+.copertina{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    margin-left: 10px;
+    background-image: url("../img/sinister.jpeg");
+    background-size: 30px;
+    background-position: center;
+}
+.footer-left .text{
+    margin-left: 10px;
+}
+.footer-left .text .titolo{
+    font-size: 12px;
+    color: white;
+}
+.footer-left .text .info{
+    font-size: 10px;
+    color: gray;
+}
+.fa-heart{
+    margin-left: 20px;
+}
+.fa-folder{
+    margin-left: 10px;
+}
+.fa-heart, .fa-folder{
+    color: gray;
+}
+.footer-center{
+    
+}
+.footer-center .symbol-white{
+    color: white;
+}
+.fa-play-circle{
+    font-size: 30px;
+    vertical-align: auto;
+}
+.fa-undo{
+    margin-left: 10px;
+}
+
+.footer-right{
+    width: 20%;
 }

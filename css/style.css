@@ -120,13 +120,14 @@ main h1{
 }
 .image1{
     float: left;
-    width: 180px;
-    margin-right: 8px;
+    width: 170px;
+    margin-right: 15px;
+    margin-left: 3px;
     margin-top: 30px;
 }
 .image1 .image-top{
     width: 100%;
-    height: 180px;
+    height: 170px;
     background-color: red;
 }
 .image1 .image-bottom{
@@ -144,6 +145,12 @@ img{
 .image1 .image-bottom .sottotitolo{
     color: gray;
     font-size: 13px;
+    margin-bottom: 10px;
+}
+.suggerimenti{
+    color: gray;
+    font-size: 13px;
+    padding-top: 8px;
 }
 footer{
     position: fixed;

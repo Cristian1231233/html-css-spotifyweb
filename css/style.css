@@ -11,6 +11,7 @@ body{
     width: 200px;
     height: 100vh;
     background-color: black;
+    padding-left: 15px;
 }
 .sidebar .image-text{
     display: flex;
@@ -19,10 +20,47 @@ body{
 }
 .sidebar .image{
     width: 40px;
-    margin: 15px 5px 15px 15px;
+    margin: 15px 5px 15px 0;
 }
 .sidebar .text{
     font-size: 22px;
+}
+.sidebar .nav1{
+    color: gray;
+}
+.sidebar .nav1 li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.sidebar .nav1 li a, .sidebar .nav2 li a{
+    color: gray;
+    text-decoration: none;
+}
+.sidebar .nav1 .fas{
+    font-size: 24px;
+    vertical-align: middle;
+}
+.sidebar .nav1 span{
+    font-size: 11px;
+}
+.sidebar .nav2{
+    margin-top: 20px;
+}
+.sidebar .nav2 li{
+    font-size: 15px;
+}
+.sidebar .nav2 .fas{
+    font-size: 37px;
+    margin: 10px 4px 10px 0px;
+}
+.nav2 .fa-plus-square{
+    vertical-align: middle;
+}
+.nav2 .playlist{
+    margin-top: 10px;
+}
+.nav2 .playlist span{
+    font-size: 13px;
 }
 .container{
     float: left;

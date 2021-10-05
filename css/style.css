@@ -118,8 +118,11 @@ main h1{
     display: table;
     clear: both;
 }
+.contenitore-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 .image1{
-    float: left;
     width: 170px;
     margin-right: 15px;
     margin-left: 3px;

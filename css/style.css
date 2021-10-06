@@ -45,6 +45,7 @@ body{
 }
 .sidebar .nav2{
     margin-top: 20px;
+    overflow: auto;
 }
 .sidebar .nav2 li{
     font-size: 15px;
@@ -68,6 +69,14 @@ body{
 .nav2 .playlist span{
     font-size: 13px;
 }
+.install{
+    color: gray;
+    font-size: 13px;
+}
+.installing.fas{
+    font-size: 5px;
+}
+
 .container{
     float: left;
     width: calc(100% - 200px);
@@ -133,7 +142,7 @@ main h1{
 }
 .contenitore-flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .image-box{
     width: 15%;
@@ -212,7 +221,7 @@ footer{
 .footer-left{
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 187px;
     height: 60px;
 }
 .copertina{
@@ -234,6 +243,14 @@ footer{
     font-size: 10px;
     color: gray;
 }
+.footer-left .text .info:hover{
+    color: white;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+
 .fa-heart{
     margin-left: 20px;
 }
@@ -242,6 +259,9 @@ footer{
 }
 .fa-heart, .fa-folder{
     color: gray;
+}
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
 }
 
 .footer-center .symbol-white{
@@ -257,7 +277,7 @@ footer{
     margin: 0 4%;
 }
 
-.fa-play-circle:hover{
+.zoom-circle:hover{
     transform: scale(1.2);
 }
 .fa-step-backward{
@@ -330,11 +350,11 @@ footer{
 }
 
 .barra{
-    width: 130px;
+    width: 110px;
     height: 3px;
     background-color: #5A5A5A;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-right: 6px;
 }
 .barra-mini{
     position: relative;

@@ -9,7 +9,7 @@ body{
 .sidebar{
     float: left;
     width: 200px;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: black;
     padding-left: 15px;
 }
@@ -72,13 +72,18 @@ body{
     float: left;
     width: calc(100% - 200px);
 }
-.container header{
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    float: left;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: calc(100% - 200px);
     height: 70px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
 }
 header a{
     font-size: 10px;
@@ -96,7 +101,7 @@ header a:hover{
     width: 100%;
     height: calc(100vh - 70px);
     background-color: #141922;
-    padding: 0 10px 80px 10px;
+    padding: 70px 10px 150px 20px;
     overflow: auto;
 }
 
@@ -130,30 +135,48 @@ main h1{
     display: flex;
     flex-wrap: wrap;
 }
-.image1{
+.image-box{
     width: 15%;
     margin-right: 15px;
     margin-left: 3px;
     margin-top: 30px;
 }
-.image1 .image-top{
+
+.image-box .image-top{
     width: 100%;
-    height: 160px;
-    background-color: red;
+    position: relative;
+    cursor: pointer;
 }
-.image1 .image-bottom{
-    background-color: ;
+.image-top:hover .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 16, 16, .6);
+}
+.overlay .symble-play{
+    position: absolute;
+    display: none;
+}
+.image-top:hover .symble-play{
+    display: block;
+    color: white;
+    font-size: 50px;
+}
+.image-box .image-bottom{
     text-align: center;
 }
 img{
     width: 100%;
 }
-.image1 .image-bottom h2{
+.image-box .image-bottom h2{
     color: white;
     font-size: 15px;
     padding: 14px 0 8px 0;
 }
-.image1 .image-bottom .sottotitolo{
+.image-box .image-bottom .sottotitolo{
     color: gray;
     font-size: 13px;
     margin-bottom: 10px;
@@ -163,14 +186,17 @@ img{
     font-size: 13px;
     padding-top: 8px;
 }
+
 .background1{
     background-image: url("../img/youg.jpeg");
 }
 .background1, .background2{
+    height: 190%;
     border-radius: 50%;
     background-position: center;
     background-size: 130px;
 }
+
 .background2{
     background-image: url("../img/einaudi.jpeg");
 }
@@ -178,11 +204,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 70px;
     background-color: #282828;
+    z-index: 3;
 }
 .footer-left{
     display: flex;
@@ -193,7 +218,6 @@ footer{
 .copertina{
     width: 40px;
     height: 40px;
-    background-color: red;
     margin-left: 10px;
     background-image: url("../img/sinister.jpeg");
     background-size: 30px;

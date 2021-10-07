@@ -56,7 +56,7 @@ body{
 .nav2 .titolino{
     color: white;
 }
-.sidebar .nav2 .fas{
+.sidebar .nav2 i{
     font-size: 37px;
     margin: 10px 4px 10px 0px;
 }
@@ -69,12 +69,32 @@ body{
 .nav2 .playlist span{
     font-size: 13px;
 }
+
+.nav2 .install i{
+    font-size: 12px;
+}
 .install{
+    border-bottom: 1px solid gray;
+    margin-right: 20px;
+    margin-top: 25px;
     color: gray;
     font-size: 13px;
 }
-.installing.fas{
-    font-size: 5px;
+
+.profile{
+    color:white;
+    font-size: 13px;
+}
+.profile span{
+    margin-left: 6px;
+    vertical-align: middle;
+}
+.fa-user-circle{
+    vertical-align: middle;
+}
+.nav2 .profile i{
+    color: gray;
+    font-size: 25px;
 }
 
 .container{
@@ -111,7 +131,7 @@ header a:hover{
     height: calc(100vh - 70px);
     background-color: #141922;
     padding: 70px 10px 150px 20px;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 main .lista-main{
@@ -216,7 +236,8 @@ footer{
     width: 100%;
     height: 70px;
     background-color: #282828;
-    z-index: 3;
+    
+    
 }
 .footer-left{
     display: flex;
@@ -362,4 +383,58 @@ a{
     width: 30px;
     background-color: white;
     border-radius: 10px;
+}
+/*  media query  */
+@media screen and (min-width: 768px) {
+    
+    .image-box{
+        width: 15%;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 767px){
+    .image-box{
+        width: 46%;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 575px){
+    .image-box{
+        width: 46%;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 532px){
+    .image-box{
+        width: 46%;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        width: 65px;
+    }
+    .sidebar .text{
+        display: none;
+    }
+    .sidebar .nav1 li span{
+        display: none;
+    }
+    .sidebar .nav2 li{
+        display: none;
+    }
+    .install{
+        border: none;
+    }
+    .install span, .profile span{
+        display: none;
+    }
+    .container{
+        width: calc(100% - 65px);
+    }
 }

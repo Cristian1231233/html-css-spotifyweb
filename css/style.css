@@ -6,10 +6,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.container-principale{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
 .sidebar{
     float: left;
     width: 200px;
-    height: calc(100vh - 70px);
+    height: 100%;
     background-color: black;
     padding-left: 15px;
 }
@@ -100,6 +104,7 @@ body{
 .container{
     float: left;
     width: calc(100% - 200px);
+    overflow: auto;
 }
 header{
     position: fixed;
@@ -125,13 +130,13 @@ header a{
 }
 header a:hover{
     transform: scale(1.1);
+    transition: 1s;
 }
 .container main{
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100%;
     background-color: #141922;
     padding: 70px 10px 150px 20px;
-    overflow-y: auto;
 }
 
 main .lista-main{
@@ -388,33 +393,41 @@ a{
 @media screen and (min-width: 768px) {
     
     .image-box{
-        width: 15%;
+        width: 13%;
         flex-shrink: 0;
+    }
+    .contenitore-flex{
         flex-wrap: wrap;
     }
     
 }
 @media screen and (max-width: 767px){
     .image-box{
-        width: 46%;
+        width: 19%;
         flex-shrink: 0;
+    }
+    .contenitore-flex{
         flex-wrap: wrap;
     }
     
 }
 @media screen and (max-width: 575px){
     .image-box{
-        width: 46%;
+        width: 42%;
         flex-shrink: 0;
+    }
+    .contenitore-flex{
         flex-wrap: wrap;
+    }
+    header{
+        width: calc(100% - 65px);
     }
     
 }
 @media screen and (max-width: 532px){
     .image-box{
-        width: 46%;
+        width: 42%;
         flex-shrink: 0;
-        flex-wrap: wrap;
     }
     .sidebar{
         width: 65px;
@@ -435,6 +448,12 @@ a{
         display: none;
     }
     .container{
+        width: calc(100% - 65px);
+    }
+    .contenitore-flex{
+        flex-wrap: wrap;
+    }
+    header{
         width: calc(100% - 65px);
     }
 }

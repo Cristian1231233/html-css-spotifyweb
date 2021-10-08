@@ -304,6 +304,7 @@ a{
 }
 .fa-heart:hover, .fa-folder:hover{
     color: white;
+    cursor: pointer;
 }
 
 .footer-center .symbol-white{
